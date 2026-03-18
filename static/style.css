@@ -1,0 +1,80 @@
+body {
+	background: linear-gradient(135deg, #f9d423 0%, #ff4e50 100%);
+	min-height: 100vh;
+	margin: 0;
+	font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	background: rgba(255,255,255,0.85);
+	border-radius: 24px;
+	box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+	padding: 2.5rem 2rem 2rem 2rem;
+	text-align: center;
+	max-width: 350px;
+}
+
+h1 {
+	color: #ff4e50;
+	font-size: 2.5rem;
+	margin-bottom: 0.5rem;
+	letter-spacing: 2px;
+}
+
+.subtitle {
+	color: #f9d423;
+	font-size: 1.1rem;
+	margin-bottom: 1.5rem;
+}
+
+
+.number-box {
+	font-size: 3rem;
+	color: #fff;
+	background: linear-gradient(135deg, #f9d423 0%, #ff4e50 100%);
+	border-radius: 1em;
+	box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+	min-width: 220px;
+	min-height: 60px;
+	margin: 0 auto 2rem auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	border: 4px solid #fff;
+	transition: background 0.3s;
+	white-space: nowrap;
+}
+
+.container > *:not(:last-child) {
+	margin-bottom: 1.2rem;
+}
+
+#problem-display {
+	word-break: keep-all;
+	overflow: visible;
+}
+
+#new-number-btn,
+#show-answer-btn {
+	background: #ff4e50;
+	color: #fff;
+	border: none;
+	border-radius: 2em;
+	padding: 0.75em 2em;
+	font-size: 1.2rem;
+	font-weight: bold;
+	cursor: pointer;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+	transition: background 0.2s, transform 0.1s;
+	margin-bottom: 0.5rem;
+}
+#new-number-btn:hover,
+#show-answer-btn:hover {
+	background: #f9d423;
+	color: #ff4e50;
+	transform: scale(1.05);
+}
